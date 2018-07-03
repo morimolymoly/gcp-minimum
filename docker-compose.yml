@@ -1,0 +1,9 @@
+version: "2"
+services:
+  gcp:
+    container_name: gcp-min
+    build: ./gcp
+networks:
+    default:
+        external:
+            name: gcp-network
